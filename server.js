@@ -41,6 +41,10 @@ app.post("/compile", async (req, res) => {
   );
 });
 
+app.get("/", (req, res) => {
+  res.send("LaTeX Compiler Service is running ✅");
+});
+
 app.listen(3000, () => {
   console.log("LaTeX service running on port 3000");
 });
